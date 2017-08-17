@@ -23,12 +23,12 @@ namespace Gestion_2017.Forms {
         public SqlConnection oCo = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=P:\Visual Studio\Franco\Gestion\Data\Gestion.mdf;Integrated Security = True");
 
         private void ABM_Clientes_Ficha_Load(object sender, EventArgs e) {
-            oCo.Open();
-            DA = new SqlDataAdapter("SELECT * FROM clientes ORDER BY numclie ASC", oCo);
-            SqlCommandBuilder aux = new SqlCommandBuilder(DA);
-            DA.Fill(ClientesDS, "cliente");
+            //oCo.Open();
+            //DA = new SqlDataAdapter("SELECT * FROM clientes ORDER BY numclie ASC", oCo);
+            //SqlCommandBuilder aux = new SqlCommandBuilder(DA);
+            //DA.Fill(ClientesDS, "cliente");
 
-            oCo.Close();
+            //oCo.Close();
         }
 
 
